@@ -7,7 +7,7 @@
   <title>Blachard</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -44,6 +44,90 @@
         </nav>
         <button class="btn header__link-open"> Войти</button>
       </div>
+      <div class="main__simplebar">
+        <ul class="main__list">
+          <li class="main__item">
+            <button class="main__item-btn" data-path="one">
+              <strong class="main__item-heading">Реализм</strong>
+              <span class="main__item-icon"></span>
+            </button>
+            <div class="main__dropdown" data-target="one">
+              <div class="main__dropdown-wrap" data-simplebar>
+                <ul class="main__drop-list">
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-tintoretto"><span class="main__item-text">Тинторрето</span></a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-fridrih">Фридрих</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-leo">Леонардо</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-varocio">Верроккьо</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main__item">
+            <button class="main__item-btn" data-path="two">
+              <strong class="main__item-heading">Импрессионизм</strong>
+              <span class="main__item-icon"></span>
+            </button>
+            <div class="main__dropdown" data-target="two">
+              <div class="main__dropdown-wrap" data-simplebar>
+                <ul class="main__drop-list">
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mone">Моне</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sisley">Сислей</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mane">Мане</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_renyar">Ренуар</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main__item">
+            <button class="main__item-btn" data-path="three">
+              <strong class="main__item-heading">Постимпрессионизм</strong>
+              <span class="main__item-icon"></span>
+            </button>
+            <div class="main__dropdown" data-target="three">
+              <div class="main__dropdown-wrap" data-simplebar>
+                <ul class="main__drop-list">
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_vangog">Ван Гог</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sezan">Сезанн</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_gogen">Гоген</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sera">Сёра</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main__item">
+            <button class="main__item-btn" data-path="four">
+              <strong class="main__item-heading">Авангард</strong>
+              <span class="main__item-icon"></span>
+            </button>
+            <div class="main__dropdown" data-target="four">
+              <div class="main__dropdown-wrap" data-simplebar>
+                <ul class="main__drop-list">
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kandinsky">Кандинский</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_marenety">Маринетти</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_malevich">Малевич</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_picasso">Пикассо</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main__item">
+            <button class="main__item-btn" data-path="five">
+              <strong class="main__item-heading">Футуризм</strong>
+              <span class="main__item-icon"></span>
+            </button>
+            <div class="main__dropdown" data-target="five">
+              <div class="main__dropdown-wrap" data-simplebar>
+                <ul class="main__drop-list">
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kara">Карра</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_pratella">Прателла</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_seviriny">Северини</a></li>
+                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_balla">Балла</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -51,43 +135,6 @@
     <section class="section-hero section-offset">
       <div class="container section-hero__container">
         <div class="section-hero__all-content">
-          <div class="section-hero__select-block">
-            <select name="select-block">
-            <option class="notouch" value="Реализм" selected disabled>Реализм</option>
-            <option value="Тинторетто">Тинторетто</option>
-            <option value="Фридрих">Фридрих</option>
-            <option value="Леонардо">Леонардо</option>
-            <option value="Верроккьо">Верроккьо</option>
-            </select >
-            <select name="select-block">
-            <option class="notouch" value="Импрессионизм" selected disabled>Импрессионизм</option>
-            <option value="Моне">Моне</option>
-            <option value="Сислей">Сислей</option>
-            <option value="Мане">Мане</option>
-            <option value="Ренуар">Ренуар</option>
-            </select >
-            <select name="select-block">
-            <option class="notouch" value="Постимпрессионизм" selected disabled>Постимпрессионизм</option>
-            <option value="Ван Гог">Ван Гог</option>
-            <option value="Сезанн">Сезанн</option>
-            <option value="Гоген">Гоген</option>
-            <option value="Сёра">Сёра</option>
-            </select >
-            <select name="select-block">
-            <option class="notouch" value="Авангард" selected disabled>Авангард</option>
-            <option value="Кандинский">Кандинский</option>
-            <option value="Маринетти">Маринетти</option>
-            <option value="Малевич">Малевич</option>
-            <option value="Пикассо">Пикассо</option>
-            </select >
-            <select name="select-block">
-            <option class="notouch" value="Футуризм" selected disabled>Футуризм</option>
-            <option value="Карра">Карра</option>
-            <option value="Прателла">Прателла</option>
-            <option value="Северини">Северини</option>
-            <option value="Балла">Балла</option>
-            </select >
-          </div>
           <div class="section-hero__content">
             <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
             <p class="section-hero__discription">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
@@ -365,7 +412,7 @@
         </ul>
       </div>
     </footer>
-    <script src="JS/choices.min.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
     const swiper = new Swiper('.swiper', {

@@ -126,16 +126,267 @@ body {
   padding-left: 20px;
 }
 
-/*hero*/
-
-.section-hero__select-block {
-  position: relative;
+.main__simplebar {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
   z-index: 3;
 }
 
-.notouch {
+.main__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main__item {
+  position: relative;
+  color: #FFFFFF;
+  height: 70px;
+  margin-right: 110px;
+}
+
+.main__item-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  outline: none;
+  padding-right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFFFFF;
+  transition: color 0.2s ease-in-out;
   cursor: pointer;
 }
+
+.main__item-btn:hover,
+.main__item-btn:focus {
+  color: var(--main);
+}
+
+.main__item-btn::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  margin-left: 10px;
+  margin-top: -3px;
+  transform: rotate(135deg);
+  transition: transform 0.5s ease;
+  transform-origin: cente;
+}
+
+.main__item-btn.is-active::after {
+  transform: rotate(-45deg) translateY(4px);
+}
+
+.main__item-btn:active {
+  color: var(--two);
+}
+
+.main__dropdown {
+  display: none;
+  padding: 40px 0px 0px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main__dropdown-wrap {
+  width: 300px;
+  height: 300px;
+}
+
+.main__dropdown.is-active {
+  position: absolute;
+}
+
+.main__dropdown > ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.main__dropdown.is-active {
+  display: block;
+  top: 86px;
+  animation-name: dropdownOpen;
+  animation-duration: 0.4s;
+}
+
+.main__dropdown.is-disabled {
+  display: block;
+  animation-name: dropdownClose;
+  animation-duration: 0.4s;
+}
+
+.main__drop-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main__dropdown-item {
+  width: 220px;
+}
+
+.main__dropdown-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main__item-link {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  font-size: 14px;
+  color: #fff;
+  transition: border-color .3s ease;
+}
+
+.main__item-tintoretto {
+  background-image: url(../img/tintoretto.png);
+}
+
+.main__item-fridrih {
+  background-image: url(../img/frederih.png);
+}
+
+.main__item-leo {
+  background-image: url(../img/leo.png);
+}
+
+.main__item-varocio {
+  background-image: url(../img/verokio.png);
+}
+
+.main__link_mone {
+  background-image: url(../img/mone.png);
+}
+
+.main__link_sisley {
+  background-image: url(../img/sisley.png);
+}
+
+.main__link_mane {
+  background-image: url(../img/mane.png);
+}
+
+.main__link_renyar {
+  background-image: url(../img/rene.png);
+}
+
+.main__link_vangog {
+  background-image: url(../img/vangog.png);
+}
+
+.main__link_sezan {
+  background-image: url(../img/sezan.png);
+}
+
+.main__link_gogen {
+  background-image: url(../img/gogen.png);
+}
+
+.main__link_sera {
+  background-image: url(../img/sera.png);
+}
+
+.main__link_kandinsky {
+  background-image: url(../img/kandinsky.png);
+}
+
+.main__link_marenety {
+  background-image: url(../img/marineti.png);
+}
+
+.main__link_malevich {
+  background-image: url(../img/malevich.png);
+}
+
+.main__link_picasso {
+  background-image: url(../img/picasso.png);
+}
+
+.main__link_kara {
+  background-image: url(../img/karra.png);
+}
+
+.main__link_pratella {
+  background-image: url(../img/pratella.png);
+}
+
+.main__link_seviriny {
+  background-image: url(../img/severini.png);
+}
+
+.main__link_balla {
+  background-image: url(../img/balla.png);
+}
+
+.main__item-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 131, 243, 0.4);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.main__item-text {
+  position: relative;
+}
+
+.main__item-link:hover,
+.main__item-link:focus {
+  outline: none;
+  border-color: #9D5CD0;
+}
+
+.main__item-link:active::before {
+  opacity: 1;
+}
+
+.main__dropdown .simplebar-track.simplebar-vertical {
+  width: 2px;
+  background-color: #000;
+}
+
+.main__dropdown
+  .simplebar-track.simplebar-vertical
+  .simplebar-scrollbar:before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 1;
+}
+
+@keyframes dropdownOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropdownClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*hero*/
 
 .section-hero__content {
   max-width: 597px;
