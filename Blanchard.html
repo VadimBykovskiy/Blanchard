@@ -6,156 +6,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blachard</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container header__container">
-      <div class="header__block flex">
-        <a href="#" class="header__logo">
-          <img src="img/logoblanchard.svg" alt="Логотип Blachard" class="header__container">
-        </a>
-        <nav class="header__nav">
-          <ul class="header__list list-reset flex">
-            <li  class="header__item">
-              <a href="#" class="header__link"> О нас</a>
+  <div class="main-top">
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container">
+          <div class="header__block flex">
+            <a href="#" class="header__logo">
+              <img src="img/logoblanchard.svg" alt="Логотип Blachard" class="header__container">
+            </a>
+            <nav class="header__nav">
+              <ul class="header__list list-reset flex">
+                <li  class="header__item">
+                  <a href="#" class="header__link"> О нас</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> Галерея</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> Каталог</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> События</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> Издания</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> Проекты</a>
+                </li>
+                <li  class="header__item">
+                  <a href="#" class="header__link"> Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="btn header__link-open"> Войти</button>
+          </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container header__bottom-container flex">
+        <div class="main__simplebar">
+          <ul class="main__list">
+            <li class="main__item">
+              <button class="main__item-btn" data-path="one">
+                <strong class="main__item-heading">Реализм</strong>
+                <span class="main__item-icon"></span>
+              </button>
+              <div class="main__dropdown" data-target="one">
+                <div class="main__dropdown-wrap" data-simplebar>
+                  <ul class="main__drop-list">
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__item-tintoretto"><span class="main__item-text">Тинторрето</span></a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__item-fridrih">Фридрих</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__item-leo">Леонардо</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__item-varocio">Верроккьо</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> Галерея</a>
+            <li class="main__item">
+              <button class="main__item-btn" data-path="two">
+                <strong class="main__item-heading">Импрессионизм</strong>
+                <span class="main__item-icon"></span>
+              </button>
+              <div class="main__dropdown" data-target="two">
+                <div class="main__dropdown-wrap" data-simplebar>
+                  <ul class="main__drop-list">
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mone">Моне</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sisley">Сислей</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mane">Мане</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_renyar">Ренуар</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> Каталог</a>
+            <li class="main__item">
+              <button class="main__item-btn" data-path="three">
+                <strong class="main__item-heading">Постимпрессионизм</strong>
+                <span class="main__item-icon"></span>
+              </button>
+              <div class="main__dropdown" data-target="three">
+                <div class="main__dropdown-wrap" data-simplebar>
+                  <ul class="main__drop-list">
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_vangog">Ван Гог</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sezan">Сезанн</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_gogen">Гоген</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sera">Сёра</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> События</a>
+            <li class="main__item">
+              <button class="main__item-btn" data-path="four">
+                <strong class="main__item-heading">Авангард</strong>
+                <span class="main__item-icon"></span>
+              </button>
+              <div class="main__dropdown" data-target="four">
+                <div class="main__dropdown-wrap" data-simplebar>
+                  <ul class="main__drop-list">
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kandinsky">Кандинский</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_marenety">Маринетти</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_malevich">Малевич</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_picasso">Пикассо</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> Издания</a>
-            </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> Проекты</a>
-            </li>
-            <li  class="header__item">
-              <a href="#" class="header__link"> Контакты</a>
+            <li class="main__item">
+              <button class="main__item-btn" data-path="five">
+                <strong class="main__item-heading">Футуризм</strong>
+                <span class="main__item-icon"></span>
+              </button>
+              <div class="main__dropdown" data-target="five">
+                <div class="main__dropdown-wrap" data-simplebar>
+                  <ul class="main__drop-list">
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kara">Карра</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_pratella">Прателла</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_seviriny">Северини</a></li>
+                    <li class="main__dropdown-item"><a href="" class="main__item-link main__link_balla">Балла</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
-        </nav>
-        <button class="btn header__link-open"> Войти</button>
-      </div>
-      <div class="main__simplebar">
-        <ul class="main__list">
-          <li class="main__item">
-            <button class="main__item-btn" data-path="one">
-              <strong class="main__item-heading">Реализм</strong>
-              <span class="main__item-icon"></span>
-            </button>
-            <div class="main__dropdown" data-target="one">
-              <div class="main__dropdown-wrap" data-simplebar>
-                <ul class="main__drop-list">
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-tintoretto"><span class="main__item-text">Тинторрето</span></a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-fridrih">Фридрих</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-leo">Леонардо</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__item-varocio">Верроккьо</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="main__item">
-            <button class="main__item-btn" data-path="two">
-              <strong class="main__item-heading">Импрессионизм</strong>
-              <span class="main__item-icon"></span>
-            </button>
-            <div class="main__dropdown" data-target="two">
-              <div class="main__dropdown-wrap" data-simplebar>
-                <ul class="main__drop-list">
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mone">Моне</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sisley">Сислей</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_mane">Мане</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_renyar">Ренуар</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="main__item">
-            <button class="main__item-btn" data-path="three">
-              <strong class="main__item-heading">Постимпрессионизм</strong>
-              <span class="main__item-icon"></span>
-            </button>
-            <div class="main__dropdown" data-target="three">
-              <div class="main__dropdown-wrap" data-simplebar>
-                <ul class="main__drop-list">
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_vangog">Ван Гог</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sezan">Сезанн</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_gogen">Гоген</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_sera">Сёра</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="main__item">
-            <button class="main__item-btn" data-path="four">
-              <strong class="main__item-heading">Авангард</strong>
-              <span class="main__item-icon"></span>
-            </button>
-            <div class="main__dropdown" data-target="four">
-              <div class="main__dropdown-wrap" data-simplebar>
-                <ul class="main__drop-list">
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kandinsky">Кандинский</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_marenety">Маринетти</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_malevich">Малевич</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_picasso">Пикассо</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="main__item">
-            <button class="main__item-btn" data-path="five">
-              <strong class="main__item-heading">Футуризм</strong>
-              <span class="main__item-icon"></span>
-            </button>
-            <div class="main__dropdown" data-target="five">
-              <div class="main__dropdown-wrap" data-simplebar>
-                <ul class="main__drop-list">
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_kara">Карра</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_pratella">Прателла</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_seviriny">Северини</a></li>
-                  <li class="main__dropdown-item"><a href="" class="main__item-link main__link_balla">Балла</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
+        </div>
+        <form action="" class="search">
+          <button class="search__btn" type="submit"></button>
+          <input class="search__input" type="text" name="text" placeholder="Поиск по сайту">
+        </form>
       </div>
     </div>
   </header>
 
-  <main class="main">
-    <section class="section-hero section-offset">
-      <div class="container section-hero__container">
-        <div class="section-hero__all-content">
-          <div class="section-hero__content">
-            <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
-            <p class="section-hero__discription">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-            <button class="btn section-hero__btn">Подписаться на рассылку</button>
-          </div>
+  <section class="section-hero section-offset">
+    <div class="container section-hero__container">
+      <div class="section-hero__all-content">
+        <div class="section-hero__content">
+          <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
+          <p class="section-hero__discription">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+          <button class="btn section-hero__btn">Подписаться на рассылку</button>
         </div>
       </div>
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide swiper0"></div>
-          <div class="swiper-slide swiper1"></div>
-          <div class="swiper-slide swiper2"></div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper0"></div>
+        <div class="swiper-slide swiper1"></div>
+        <div class="swiper-slide swiper2"></div>
       </div>
-    </section>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</div>
 
+  <main class="main">
     <section class="section-all section-offset">
       <div class="container section-all__container">
         <div class="section-all__content">
@@ -165,23 +178,181 @@
       </div>
     </section>
 
-    <section class="section-gallery section-offset">
+    <section class="section-gallery">
       <div class="container section-gallery__container">
-        <h2 class="section-gallery__heading">Галерея</h2>
-         <div class="section-gallery__block-left">
-           <span class="section-gallery__block-left-text">Фильтр:</span>
-           <div class="section-gallery__select">
-             <select name="section-gallery__select-block">
-               <option class="section-gallery__notouch" value="Живопись">Живопись</option>
-               <option value="Рисунок">Рисунок</option>
-               <option value="Скульптура">Скульптура</option>
-             </select>
-           </div>
-           <p class="section-gallery__discription">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href class="dicription-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
-         </div>
-         <div class="section-gallery__block-right">
-
-         </div>
+        <div class="section-gallery__block-all">
+          <div class="section-gallery__block-left">
+            <h2 class="section-gallery__heading">Галерея</h2>
+            <span class="section-gallery__block-left-text">Фильтр:</span>
+            <div class="section-gallery__select">
+              <select name="select">
+                <option class="section-gallery__notouch" value="Живопись">Живопись</option>
+                <option value="Рисунок">Рисунок</option>
+                <option value="Скульптура">Скульптура</option>
+              </select>
+            </div>
+          </div>
+          <div class="section-gallery__swiper">
+            <div class="section-gallery__navigation">
+              <button class="nav-btn section-gallery__prev" aria-label="К предыдущему слайду"></button>
+              <div class="section-gallery__pagination"></div>
+              <button class="nav-btn section-gallery__next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container slides-container">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg" media="(max-width: 1360px)">
+                  <img class="section-gallery__image" src="img/gallerypic1.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic3.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic1block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic2block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic3block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic1block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic2block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic3block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic1block4.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic2block4.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic3block4.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic4.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic5.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic6.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic4block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic5block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic6block2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic4block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic5block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic6block3.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic4block4.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic5block4.png" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide section-gallery__slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(max-width: 1024px)">
+                  <img class="section-gallery__image" src="img/gallerypic6block4.png" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="section-gallery__last">
+            <div class="section-gallery__discription">
+              <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href class="dicription-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -413,30 +584,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        hide: true,
-      },
-      });
-    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/choices.min.js"></script>
     <script src="JS/Blanchard.js"></script>
 </body>
 </html>
