@@ -263,3 +263,83 @@ let gallerySlider = new Swiper(".slides-container", {
 
 
 
+tippy('.js-tooltip', {
+  theme: 'purple'
+});
+
+
+
+
+/* form */
+
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7 (999) 999-99-99");
+
+im.mask(selector);
+
+new JustValidate('.section-contacts__form', {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 10
+    },
+    tel: {
+      required: true,
+      function: (name, value) => {
+        const phone = selector.inputmask.unmaskedvalue()
+        return Number (phone) && phone.length === 10
+      }
+    },
+  },
+  messages: {
+    name: {
+      required: 'Недопустимый формат'
+    },
+    tel: {
+      required: 'Недопустимый формат'
+    },
+  },
+});
+
+
+/* map */
+
+ymaps.ready(init);
+function init() {
+  const mapElem = document.querySelector('#map');
+  const myMap = new ymaps.Map(
+    "map",
+    {
+      center: [55.75846806898367, 37.60108849999989],
+      zoom: 14,
+      controls: ['geolocationControl', 'zoomControl']
+    },
+    {
+      suppressMapOpenBlock: true,
+      geolocationControlSize: "large",
+      geolocationControlPosition:  { top: "200px", right: "20px" },
+      geolocationControlFloat: 'none',
+      zoomControlSize: "small",
+      zoomControlFloat: "none",
+      zoomControlPosition: { top: "120px", right: "20px" }
+    }
+  );
+
+  const myPlacemark = new ymaps.Placemark(
+    [55.75846806898367, 37.60108849999989],
+    {},
+    {
+      iconLayout: "default#image",
+      iconImageHref: "img/mapsbingo.svg",
+      iconImageSize: [20, 20],
+      iconImageOffset: [-20, -40],
+    }
+  );
+
+  myMap.geoObjects.add(myPlacemark);
+
+  setTimeout(() => {
+    myMap.container.fitToViewport();
+  }, 5000);
+}

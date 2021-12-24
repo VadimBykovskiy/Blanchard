@@ -530,7 +530,7 @@
       <div class="container section-projects__container">
         <h2 class="section-projects__heading">Проекты</h2>
         <div class="section-projects__content-top">
-          <p class="section-projects__discription">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects/about</p>
+          <p class="section-projects__discription">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <button class="tooltip-btn js-tooltip" data-tippy-content="Пример современных тенденций - современная методология разработки">i</button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button class="tooltip-btn js-tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">i</button> исключительно в разрезе маркетинговых и финансовых <button class="tooltip-btn js-tooltip" data-tippy-content="В стремлении повысить качество">i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="tooltip-link">blanchard-art.ru/projects/about</a></p>
         </div>
         <div class="section-projects__content-bottom">
           <h3 class="section-projects__heading-content-bottom">Партнеры проектов:</h3>
@@ -540,11 +540,14 @@
     </section>
 
     <section class="section-contacts section-offset">
-      <div class="container section-contacts__container">
+      <div class="container section-contacts__container-top">
         <h2 class="section-contacts__heading">Контакты</h2>
-        <div class="section-contacts__content-left">
-          <p class="section-contacts__content-left-heading">Шоурум №4
-            Леонтьевский переулок, дом 5/1</p>
+      </div>
+        <div class="section-contacts__content-left-wrap">
+          <div class="container section-contacts__container">
+          <div class="section-contacts__content-left">
+            <p class="section-contacts__content-left-heading">Шоурум №4</p>
+          <p class="section-contacts__content-left-heading-bottom">Леонтьевский переулок, дом 5/1</p>
           <h3 class="form-heading">Заказать обратный звонок</h3>
           <form action="" class="section-contacts__form">
             <label class="form__error">
@@ -553,9 +556,11 @@
             <label class="form__error">
               <input class="form__input" type="tel" name="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
             </label>
+            <div>
+              <button class="btn section-contacts__btn">Заказать</button>
+            </div>
           </form>
-          <button class="btn section-contacts__btn">Заказать</button>
-          <p class="section-contacts__coll"></p>
+          <p class="section-contacts__coll">Связаться в один клик</p>
           <div class="section-contacts__social">
             <ul class="section-contacts__list list-reset flex">
               <li class="section-contacts__item">
@@ -582,13 +587,17 @@
               </li>
             </ul>
           </div>
+          </div>
+          <div class="section-contacts__content-right" id="map">
+
+        </div>
         </div>
       </div>
     </section>
   </main>
 
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="container footer__container flex">
         <div class="footer__content">
           <a href="#" class="footer__logo">
             <img src="img/footerlogo.svg" alt="">
@@ -624,6 +633,12 @@
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="JS/choices.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="JS/Blanchard.js"></script>
 </body>
 </html>

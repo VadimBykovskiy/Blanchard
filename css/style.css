@@ -1156,7 +1156,6 @@ input {
   line-height: 65px;
   color: #333333;
   margin: 0;
-  margin-bottom: 30px;
 }
 
 .section-projects__discription {
@@ -1175,4 +1174,249 @@ input {
   font-size: 24px;
   line-height: 32px;
   color: #333333;
+}
+
+.tooltip-link {
+  color: #9D5CD0;
+}
+
+.tooltip-btn {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #9D5CD0;
+}
+
+.tippy-box[data-theme~='purple'] {
+  max-width: 264px;
+  border-radius: 0;
+  background-color: #9D5CD0;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.tippy-box[data-theme~='purple'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #9D5CD0;
+}
+
+.tippy-box[data-theme~='purple'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #9D5CD0;
+}
+
+.tippy-box[data-theme~='purple'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #9D5CD0;
+}
+
+.tippy-box[data-theme~='purple'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #9D5CD0;
+}
+
+/*contacts*/
+
+.section-contacts {
+  overflow-x: hidden;
+  margin-bottom: 0;
+}
+
+.section-contacts__heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.section-contacts__content-left-wrap {
+  border: 1px solid #CACACA;
+}
+
+.section-contacts__content-left {
+  border-right: 1px solid #CACACA;
+  padding-top: 124px;
+  padding-bottom: 115px;
+  padding-right: 120px;
+}
+
+.section-contacts__container {
+  display: flex;
+}
+
+.section-contacts__content-left-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.section-contacts__content-left-heading-bottom {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.form-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.section-contacts__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.form__input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border: 1px solid #333333;
+  border-radius: 100px;
+  padding-left: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.form__input::placeholder {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #999999;
+}
+
+.form__error:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.section-contacts__btn {
+  cursor: pointer;
+  background-color: inherit;
+  outline: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #9D5CD0;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+  padding: 17px 35px;
+}
+
+.section-contacts__coll {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.section-contacts__item:not(:last-child) {
+  cursor: pointer;
+  margin-right: 22px;
+}
+
+.section-contacts__content-right {
+  min-height: 320px;
+  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); /* 1078 - в данном случае это ширина карты внутри контейнера, её можно менять */
+  margin-right: calc((-100vw + 100%) / 2);
+  margin-top: -1px;
+  transition-property: width, height, padding;
+  transition-duration: 100ms;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+@media (max-width: 1024px) {
+  .section-contacts__content-left {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .section-contacts__content-right {
+    width: calc(487 / 924 * 100% + ((100vw - 100%) / 2));
+  }
+}
+
+@media (max-width: 768px) {
+  .section-contacts__content-left {
+    width: calc(380 / 668 * 100%);
+  }
+
+  .section-contacts__content-right {
+    width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contacts__container {
+    flex-direction: column-reverse;
+  }
+
+  .section-contacts__content-left-wrap,
+  .section-contacts__content-left {
+    border: none;
+  }
+
+  .section-contacts__content-left,
+  .section-contacts__content-right {
+    width: calc(100% + 30px);
+  }
+
+   .section-contacts__content-right {
+    height: 320px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+
+/* footer */
+
+.footer {
+  padding: 50px 0;
+  background-color: #000000;
+}
+
+.footer__content {
+  margin-right: auto;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 20px;
 }
