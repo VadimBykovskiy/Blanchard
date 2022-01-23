@@ -485,3 +485,25 @@ function init() {
     myMap.container.fitToViewport();
   }, 5000);
 }
+
+
+/* tabs */
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.section-catalog__link').forEach(function(tabslink) {
+    tabslink.addEventListener('click', function(event) {
+      event.preventDefault();
+      const path = event.currentTarget.dataset.path
+      console.log(path)
+      document.querySelectorAll('.section-catalog__link').forEach(function(tabContent) {
+        tabContent.classList.remove('section-catalog__link_active')
+       })
+      event.target.classList.add('section-catalog__link_active')
+
+      document.querySelectorAll('.section-catalog__card').forEach(function(tabContent) {
+        tabContent.classList.remove('section-catalog__card_active')
+       })
+     document.querySelector(`[data-target="${path}"]`).classList.add('section-catalog__card_active')
+    })
+  })
+})
