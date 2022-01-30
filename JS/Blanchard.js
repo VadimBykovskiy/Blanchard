@@ -139,11 +139,11 @@ let gallerySlider = new Swiper(".slides-container", {
 /* catalog */
 
 document.addEventListener('DOMContentLoaded', function () {
-  $( ".catalog__js-accordion" ).accordion({
+  $( ".section-catalog__js-accordion" ).accordion({
       collapsible: true,
       active: 0,
       icons: false,
-      heightStyle: 'catalog__content'
+      heightStyle: 'section-catalog__content'
     });
 });
 
@@ -282,21 +282,21 @@ tippy('.js-tooltip', {
   theme: 'purple'
 });
 
-/*projects*/
+/*section-projects*/
 
 /* (() => {
   const MOBILE_WIDTH = 580;
 
   const sliderParamsNotMobile = {
-    sliderWrap: "projects__js-slider-main",
-    cardsContainerName: "projects__js-slider",
-    cardsWrapName: "projects__js-slides-wrap",
-    card: "projects__slide",
-    paginationClassName: "projects__test-pagination",
-    navClassName: "projects__test-navigation",
-    navBtnClassName: "projects__nav-btn",
-    navPrev: "projects__test-prev",
-    navNext: "projects__test-next"
+    sliderWrap: "section-projects__js-slider-main",
+    cardsContainerName: "section-projects__js-slider",
+    cardsWrapName: "section-projects__js-slides-wrap",
+    card: "section-projects__slide",
+    paginationClassName: "section-projects__test-pagination",
+    navClassName: "section-projects__test-navigation",
+    navBtnClassName: "section-projects__nav-btn",
+    navPrev: "section-projects__test-prev",
+    navNext: "section-projects__test-next"
   };
 
   function getWindowWidth() {
@@ -412,13 +412,13 @@ tippy('.js-tooltip', {
 })(); */
 
 
-var swiper = new Swiper(".projects__js-slider", {
+var swiper = new Swiper(".section-projects__js-slider", {
   slidesPerView: 3,
   spaceBetween: 30,
 
   navigation: {
-    nextEl: 'projects__nav-btn-next',
-    prevEl: 'projects__nav-btn-prev',
+    nextEl: 'section-projects__nav-btn-next',
+    prevEl: 'section-projects__nav-btn-prev',
   }
 });
 
