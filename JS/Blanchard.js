@@ -284,7 +284,7 @@ tippy('.js-tooltip', {
 
 /*projects*/
 
-(() => {
+/* (() => {
   const MOBILE_WIDTH = 580;
 
   const sliderParamsNotMobile = {
@@ -409,8 +409,18 @@ tippy('.js-tooltip', {
   window.addEventListener("resize", function () {
     checkWindowWidth(sliderParamsNotMobile);
   });
-})();
+})(); */
 
+
+var swiper = new Swiper(".projects__js-slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: 'projects__nav-btn-next',
+    prevEl: 'projects__nav-btn-prev',
+  }
+});
 
 /* form */
 
