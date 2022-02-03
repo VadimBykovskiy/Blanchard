@@ -10,43 +10,64 @@
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/burger.js" defer></script>
 </head>
 <body>
-  <div class="main-top">
     <header class="header">
       <div class="header__top">
         <div class="container header__container">
-          <div class="header__block flex">
-            <a href="#" class="header__logo">
-              <img src="img/logoblanchard.svg" alt="Логотип Blachard" class="header__container">
+          <button class="header__burger burger js-burger" type="button">
+            <span class="burger__line"></span>
+          </button>
+            <a href="#" class="header__logo logo">
+              <img src="img/logoblanchard.svg" alt="Логотип Blachard" class="logo__image" width="97" height="22">
             </a>
-            <nav class="header__nav">
-              <ul class="header__list list-reset flex">
+            <nav class="header__nav js-menu-wrap">
+              <ul class="header__list list-reset">
                 <li  class="header__item">
-                  <a href="#" class="header__link"> О нас</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">О нас</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> Галерея</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">Галерея</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> Каталог</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">Каталог</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> События</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">События</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> Издания</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">Издания</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> Проекты</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">Проекты</span></a>
                 </li>
                 <li  class="header__item">
-                  <a href="#" class="header__link"> Контакты</a>
+                  <a href="#" class="header__link link"><span class="header__link-text link__text">Контакты</span></a>
                 </li>
               </ul>
+              <a class="btn header__link-open link" href="#">
+                <span class="header__link-open-content link__text">
+                  <svg class="header__link-open-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
+                  </svg>
+                  <span class="header__link-text">Войти</span>
+                </span>
+              </a>
             </nav>
-            <button class="btn header__link-open"> Войти</button>
-          </div>
+            <button class="search-icon">
+              <svg class="search-icon__logo link__text" width="29" height="28" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+            </button>
+            <button class="header__search-btn header__search-btn--close" type="button">
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+              </svg>
+            </button>
       </div>
     </div>
     <div class="header-bottom">
@@ -54,8 +75,8 @@
         <div class="header-bottom__simplebar">
           <ul class="header-bottom__list">
             <li class="header-bottom__item">
-              <button class="header-bottom__item-btn" data-path="one">
-                <strong class="header-bottom__item-heading">Реализм</strong>
+              <button class="header-bottom__item-btn link" data-path="one">
+                <strong class="header-bottom__item-heading link">Реализм</strong>
                 <span class="header-bottom__item-icon"></span>
               </button>
               <div class="header-bottom__dropdown" data-target="one">
@@ -70,8 +91,8 @@
               </div>
             </li>
             <li class="header-bottom__item">
-              <button class="header-bottom__item-btn" data-path="two">
-                <strong class="header-bottom__item-heading">Импрессионизм</strong>
+              <button class="header-bottom__item-btn link" data-path="two">
+                <strong class="header-bottom__item-heading link">Импрессионизм</strong>
                 <span class="header-bottom__item-icon"></span>
               </button>
               <div class="header-bottom__dropdown" data-target="two">
@@ -86,8 +107,8 @@
               </div>
             </li>
             <li class="header-bottom__item">
-              <button class="header-bottom__item-btn" data-path="three">
-                <strong class="header-bottom__item-heading">Постимпрессионизм</strong>
+              <button class="header-bottom__item-btn link" data-path="three">
+                <strong class="header-bottom__item-heading link">Постимпрессионизм</strong>
                 <span class="header-bottom__item-icon"></span>
               </button>
               <div class="header-bottom__dropdown" data-target="three">
@@ -102,8 +123,8 @@
               </div>
             </li>
             <li class="header-bottom__item">
-              <button class="header-bottom__item-btn" data-path="four">
-                <strong class="header-bottom__item-heading">Авангард</strong>
+              <button class="header-bottom__item-btn link" data-path="four">
+                <strong class="header-bottom__item-heading link">Авангард</strong>
                 <span class="header-bottom__item-icon"></span>
               </button>
               <div class="header-bottom__dropdown" data-target="four">
@@ -118,8 +139,8 @@
               </div>
             </li>
             <li class="header-bottom__item">
-              <button class="header-bottom__item-btn" data-path="five">
-                <strong class="header-bottom__item-heading">Футуризм</strong>
+              <button class="header-bottom__item-btn link" data-path="five">
+                <strong class="header-bottom__item-heading link">Футуризм</strong>
                 <span class="header-bottom__item-icon"></span>
               </button>
               <div class="header-bottom__dropdown" data-target="five">
@@ -136,7 +157,12 @@
           </ul>
         </div>
         <form action="" class="search">
-          <button class="search__btn" type="submit"></button>
+          <button class="search__btn" type="submit">
+            <svg class="link__text" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+            </svg>
+          </button>
           <input class="search__input" type="text" name="text" placeholder="Поиск по сайту">
         </form>
       </div>
@@ -166,7 +192,6 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-</div>
 
   <main class="main">
     <section class="section-all section-offset">
@@ -391,29 +416,29 @@
             <div class="section-catalog__content">
               <ul class="section-catalog__test-list">
                 <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Бенедетто ди Биндо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="two">Бергоньоне, Амброджо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="three">Биссоло, Франческо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="four">Больтраффио, Джованни</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="five">Бонсиньори, Франческо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="six">Боттичини, Рафаэлло</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="seven">Брамантино</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="eight">Бреа, Людовико</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="nine">Бьяджо д’Антонио Туччи</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="ten">Веккьетта</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="eleven">Андреа Верроккьо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Бергоньоне, Амброджо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Биссоло, Франческо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Больтраффио, Джованни</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Бонсиньори, Франческо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Боттичини, Рафаэлло</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Брамантино</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Бреа, Людовико</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Бьяджо д’Антонио Туччи</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Веккьетта</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Андреа Верроккьо</a></li>
                 <li class="section-catalog__test-item"><a href="#" class="section-catalog__link section-catalog__link_active" data-path="twelve">Доменико Гирландайо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="thirteen">Беноццо Гоццоли</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="fourteen">Граначчи, Франческо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="fifteen">Грегорио ди Чекко</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="sixteen">Джованни да Удине</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="seventeen">Джованни ди Паоло</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="eighteen">Джорджоне</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="nineteen">Парентино, Бернардо</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="twenty">Пезеллино</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="twentyone">Пьетро Перуджино</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="twentytwo">Перуцци, Бальдассаре</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="twentythree">Пизанелло</a></li>
-                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="twentyfour">Пинтуриккьо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Беноццо Гоццоли</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Граначчи, Франческо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Грегорио ди Чекко</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Джованни да Удине</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Джованни ди Паоло</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Джорджоне</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Парентино, Бернардо</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Пезеллино</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Пьетро Перуджино</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Перуцци, Бальдассаре</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Пизанелло</a></li>
+                <li class="section-catalog__test-item"><a href="#" class="section-catalog__link" data-path="one">Пинтуриккьо</a></li>
               </ul>
             </div>
           </li>
@@ -669,23 +694,24 @@
           <h3 class="section-projects__heading-content-bottom">Партнеры проектов:</h3>
           <div class="section-projects__slider-container">
             <button class="section-projects__nav-btn-prev"></button>
-              <div class="section-projects__slider section-projects__js-slider"></div>
-                <div class="section-projects__slides-wrap section-projects__js-slides-wrap">
-                  <a href="#" class="section-projects__slide">
+              <div class="section-projects__slider section-projects__js-slider">
+                <div class="swiper-wrapper section-projects__slides-wrap section-projects__js-slides-wrap">
+                  <a href="#" class="swiper-slide section-projects__slide">
                     <img src="img/projectspic1.png" alt="" class="section-projects__logo size">
                   </a>
-                  <a href="#" class="section-projects__slide">
+                  <a href="#" class="swiper-slide section-projects__slide">
                     <img src="img/projectspic2.png" alt="" class="section-projects__logo">
                   </a>
-                  <a href="#" class="section-projects__slide">
+                  <a href="#" class="swiper-slide section-projects__slide">
                     <img src="img/projectspic3.png" alt="" class="section-projects__logo">
                   </a>
-                  <a href="#" class="section-projects__slide">
+                  <a href="#" class="swiper-slide section-projects__slide">
                     <img src="img/projectspic4.png" alt="" class="section-projects__logo">
                   </a>
+              </div>
             </div>
+            <button class="section-projects__nav-btn-next"></button>
           </div>
-          <button class="section-projects__nav-btn-next"></button>
           </div>
       </div>
     </section>

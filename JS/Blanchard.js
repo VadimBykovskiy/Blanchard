@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const params = {
-  btnClassName: "main__item-btn",
+  btnClassName: "header-bottom__item-btn",
   activeClassName: "is-active",
   disabledClassName: "is-disabled"
 }
@@ -412,13 +412,13 @@ tippy('.js-tooltip', {
 })(); */
 
 
-var swiper = new Swiper(".section-projects__js-slider", {
+var publicationSwiper = new Swiper(".section-projects__js-slider", {
   slidesPerView: 3,
   spaceBetween: 30,
 
   navigation: {
-    nextEl: 'section-projects__nav-btn-next',
-    prevEl: 'section-projects__nav-btn-prev',
+    nextEl: '.section-projects__nav-btn-next',
+    prevEl: '.section-projects__nav-btn-prev',
   }
 });
 
@@ -513,7 +513,9 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.section-catalog__card').forEach(function(tabContent) {
         tabContent.classList.remove('section-catalog__card_active')
        })
-     document.querySelector(`[data-target="${path}"]`).classList.add('section-catalog__card_active')
+     document.querySelector(`.section-catalog__card[data-target="${path}"]`).classList.add('section-catalog__card_active')
     })
   })
 })
+
+
