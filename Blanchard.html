@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
-  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/burger.js" defer></script>
+  <script src="js/toggle-form.js" defer></script>
 </head>
 <body>
+  <div class="top-wrapper">
     <header class="header">
       <div class="header__top">
         <div class="container header__container">
@@ -47,27 +48,40 @@
                   <a href="#" class="header__link link"><span class="header__link-text link__text">Контакты</span></a>
                 </li>
               </ul>
-              <a class="btn header__link-open link" href="#">
-                <span class="header__link-open-content link__text">
-                  <svg class="header__link-open-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
-                  </svg>
-                  <span class="header__link-text">Войти</span>
-                </span>
-              </a>
+              <div class="header__services-link">
+                <a class="btn header__link-open link" href="#">
+                  <span class="header__link-open-content link__text">
+                    <svg class="header__link-open-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
+                    </svg>
+                    <span class="header__link-text">Войти</span>
+                  </span>
+                </a>
+              </div>
             </nav>
-            <button class="search-icon">
-              <svg class="search-icon__logo link__text" width="29" height="28" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+
+            <button class="header__search-btn header__search-btn--open link js-open-search" type="button">
+              <svg class="link__text2 link__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
               </svg>
             </button>
-            <button class="header__search-btn header__search-btn--close" type="button">
-              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
-              </svg>
-            </button>
+
+            <form class="header__search js-search-form" action="/">
+              <input class="header__search-input" type="text" placeholder="Поиск по сайту">
+              <button class="header__search-btn header__serach-btn--submit link" type="submit">
+                <svg class="link__text2 link__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <button class="header__search-btn header__search-btn--close link js-close-search" type="button">
+                <svg class="link__text2 link__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09326 0)" fill="white"/>
+                  <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9075)" fill="white"/>
+                </svg>
+              </button>
+            </form>
       </div>
     </div>
     <div class="header-bottom">
@@ -156,15 +170,6 @@
             </li>
           </ul>
         </div>
-        <form action="" class="search">
-          <button class="search__btn" type="submit">
-            <svg class="link__text" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
-            </svg>
-          </button>
-          <input class="search__input" type="text" name="text" placeholder="Поиск по сайту">
-        </form>
       </div>
     </div>
   </header>
@@ -179,19 +184,21 @@
         </div>
       </div>
     </div>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide swiper0"></div>
-        <div class="swiper-slide swiper1"></div>
-        <div class="swiper-slide swiper2"></div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
   </section>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide swiper0"></div>
+      <div class="swiper-slide swiper1"></div>
+      <div class="swiper-slide swiper2"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
 
   <main class="main">
     <section class="section-all section-offset">
@@ -384,7 +391,7 @@
     <section class="section-catalog section-offset">
       <div class="container section-catalog__container">
         <div class="section-catalog__content">
-          <h2 class="section-catalog__heading"> Каталог</h2>
+          <h2 class="section-catalog__header"> Каталог</h2>
         </div>
         <p class="section-catalog__discription">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
         <div class="section-catalog__content-bottom flex">

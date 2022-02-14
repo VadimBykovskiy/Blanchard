@@ -19,9 +19,11 @@
       ) {
         menu.classList.add(params.activeClass);
         document.body.style.overflow = 'hidden';
+        btn.setAttribute('aria-label', 'Закрыть главное меню')
       } else {
         menu.classList.add(params.hiddenClass);
         document.body.removeAttribute('style');
+        btn.setAttribute('aria-label', 'Открыть главное меню')
       }
     });
   }
