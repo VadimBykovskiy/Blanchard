@@ -123,7 +123,7 @@ let gallerySlider = new Swiper(".slides-container", {
       spaceBetween: 30
     },
 
-    1200: {
+    1280: {
       slidesPerView: 3,
       grid: {
         rows: 2
@@ -447,13 +447,25 @@ tippy('.js-tooltip', {
 
 
 var publicationSwiper = new Swiper(".section-projects__js-slider", {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 30,
+
+  pagination: {
+    el: ".section-projects .section-projects__test-pagination",
+    type: "fraction"
+  },
 
   navigation: {
     nextEl: '.section-projects__nav-btn-next',
-    prevEl: '.section-projects__nav-btn-prev',
-  }
+    prevEl: '.section-projects__nav-btn-prev'
+  },
+
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  },
 });
 
 /* form */
