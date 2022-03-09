@@ -61,10 +61,10 @@ body {
 }
 
 .btn {
+  position: relative;
   border: none;
   cursor: pointer;
   text-align: center;
-  transition: color .3s ease;
 }
 
 .flex {
@@ -192,7 +192,6 @@ body {
   font-size: 18px;
   line-height: 1px;
   color: #FFFFFF;
-  transition: color .3s ease;
 }
 
 .link {
@@ -272,6 +271,7 @@ body {
   position: relative;
   margin-right: 7px;
   transform: translateX(-5px);
+  transition: color .5s ease;
 }
 
 
@@ -315,6 +315,10 @@ body {
 
 .header-bottom__item:not(:last-child) {
   margin-right: 80px;
+}
+
+.header__link-text {
+  transition: color .5s ease;
 }
 
 .header-bottom__item-btn {
@@ -368,13 +372,14 @@ body {
 
 .header-bottom__dropdown {
   display: none;
-  padding: 40px 0px 0px 50px;
+  left: -6px;
+  padding: 42px 40px 40px 39px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header-bottom__dropdown-wrap {
-  width: 300px;
-  height: 300px;
+  width: 223px;
+  max-height: 221px;
 }
 
 .header-bottom__dropdown.is-active {
@@ -539,6 +544,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
+  transition: color .5s ease;
 }
 
 .header-bottom__dropdown
@@ -1007,21 +1013,6 @@ input {
   border-radius: 100px;
 }
 
-.btn:hover {
-  outline: 3px solid #D1A9F0;
-}
-
-.btn:active {
-  background-color: #7943A4;
-  outline: 3px solid #D1A9F0;
-}
-
-.btn:focus {
-  outline: none;
-  outline: 2px solid #c283f3;
-  outline-offset: 5px;
-}
-
 .swiper {
   position: absolute;
   left: 0;
@@ -1052,6 +1043,45 @@ input {
 
 .swiper2 {
   background-image: url(../img/heropic3.png);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 2px solid;
+  border-radius: 100px;
+  opacity: 0;
+  transition: opasity .3s ease;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus::after {
+  opacity: 1;
+}
+
+.btn--fill {
+  border: 3px solid transparent;
+  transition: border-color .3s ease;
+}
+
+.btn--fill:hover {
+  border-color: #D1A9F0;
+}
+
+.btn--fill:active {
+  border-color: #D1A9F0;
+  background-color: #7943a4;
+}
+
+.btn--fill::after {
+  border-color: #c283f3;
 }
 
 @media (max-width: 1280px) {
@@ -2520,11 +2550,11 @@ input {
   width: 20px;
   height: 20px;
   padding: 5px;
-  border: none;
+  border: 1px solid #9D5CD0;
   border-radius: 50px;
   font-size: 12px;
-  color: #fff;
-  background-color: #9D5CD0;
+  color: #000000;
+  background-color: #FFFFFF;
   transition: .5s;
 }
 
@@ -2791,6 +2821,15 @@ input {
   font-size: 16px;
   line-height: 32px;
   color: #999999;
+  transition: background-color .5s ease;
+}
+
+.section-contacts__form-input:hover {
+  background-color: #EAEAEA;
+}
+
+.section-contacts__form-input:focus {
+  background-color: #EAEAEA;
 }
 
 .section-contacts__form-input::placeholder {
@@ -2816,6 +2855,22 @@ input {
   border: 2px solid #9D5CD0;
   border-radius: 100px;
   padding: 17px 35px;
+  transition: background-color .5s ease, color .5s ease;
+}
+
+.section-contacts__btn:hover {
+  color: #FFFFFF;
+  background-color: #9D5CD0;
+}
+
+.section-contacts__btn:active {
+  background-color: #7943A4;
+  outline: 3px solid #D1A9F0;
+}
+
+.section-contacts__btn:focus {
+  outline: 2px solid #c283f3;
+  outline-offset: 5px;
 }
 
 .section-contacts__coll {
@@ -2846,6 +2901,10 @@ input {
   filter: grayscale(1);
 }
 
+.section-contacts__link {
+  transition: fill-opacity .5s ease;
+}
+
 .section-contacts__link:hover .link-color path {
   fill-opacity: .5;
 }
@@ -2854,8 +2913,27 @@ input {
   border: 1px solid #9643A4;
 }
 
+.section-contacts__link:focus {
+  outline: none;
+}
+
+.section-contacts__form-error {
+  position: relative;
+}
+
 .section-contacts__link:focus .link-color path {
   fill-opacity: .5;
+}
+
+.js-validate-error-label {
+  top: -17px;
+  position: absolute;
+  padding-left: 20px;
+  color: #d11616 !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media (max-width: 1280px) {
@@ -2956,9 +3034,12 @@ input {
   fill: #9D5CD0;
 }
 
+.footer__link:focus {
+  outline: none;
+}
+
 .footer__link:focus .footer__link-color path {
   fill: #FFFFFF;
-  outline: none;
 }
 
 @media (max-width: 1280px) {
