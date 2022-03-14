@@ -1,4 +1,4 @@
-var developmentsSwiper = new Swiper(".js-developments-slider", {
+var eventsSwiper = new Swiper(".js-events-slider", {
   slidesPerView: 1,
   grid: {
     rows: 1,
@@ -7,20 +7,19 @@ var developmentsSwiper = new Swiper(".js-developments-slider", {
 
   spaceBetween:20,
   pagination: {
-    el: ".section-developments .section-developments__test-pagination",
-    type: "fraction"
+    el: ".section-events .section-events__test-pagination",
   },
 
   navigation: {
-    nextEl: '.section-developments__nav-btn-next',
-    prevEl: '.section-developments__nav-btn-prev'
+    nextEl: '.section-events__nav-btn-next',
+    prevEl: '.section-events__nav-btn-prev',
+    disabledClass: "nav-btn--disabled"
   },
+  breakpoints: {
   611: {
     slidesPerView: 2,
     spaceBetween: 34
   },
-
-  breakpoints: {
     971: {
       slidesPerView: 3,
       spaceBetween: 27
