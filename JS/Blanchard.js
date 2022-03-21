@@ -189,10 +189,14 @@ tippy('.js-tooltip', {
 
 /* partners */
 
-var publicationSwiper = new Swiper(".section-projects__js-slider", {
-  slidesPerView: 2,
-  spaceBetween: 30,
+var publicationSwiper = new Swiper(".js-projects-slider", {
+  slidesPerView: 1,
+  grid: {
+    rows: 1,
+    fill: "row"
+  },
 
+  spaceBetween: 20,
   pagination: {
     el: ".section-projects .section-projects__test-pagination",
     type: "fraction"
@@ -200,16 +204,27 @@ var publicationSwiper = new Swiper(".section-projects__js-slider", {
 
   navigation: {
     nextEl: '.section-projects__nav-btn-next',
-    prevEl: '.section-projects__nav-btn-prev'
+    prevEl: '.section-projects__nav-btn-prev',
+    disabledClass: "nav-btn--disabled"
   },
 
   breakpoints: {
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 30
+    611: {
+      slidesPerView: 2,
+      spaceBetween: 34
     },
-  },
-});
+
+    971: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    },
+
+    1281: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+})
 
 /* form */
 

@@ -8,6 +8,7 @@ var eventsSwiper = new Swiper(".js-events-slider", {
   spaceBetween:20,
   pagination: {
     el: ".section-events .section-events__test-pagination",
+    clickable: true
   },
 
   navigation: {
