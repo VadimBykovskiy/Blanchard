@@ -111,7 +111,8 @@ let gallerySlider = new Swiper(".slides-container", {
   },
   navigation: {
     nextEl: ".section-gallery__next",
-    prevEl: ".section-gallery__prev"
+    prevEl: ".section-gallery__prev",
+    disabledClass: "nav-btn-disabled"
   },
 
   breakpoints: {
@@ -205,7 +206,7 @@ var publicationSwiper = new Swiper(".js-projects-slider", {
   navigation: {
     nextEl: '.section-projects__nav-btn-next',
     prevEl: '.section-projects__nav-btn-prev',
-    disabledClass: "nav-btn--disabled"
+    disabledClass: "nav-btn-disabled"
   },
 
   breakpoints: {

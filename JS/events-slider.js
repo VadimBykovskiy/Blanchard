@@ -14,7 +14,7 @@ var eventsSwiper = new Swiper(".js-events-slider", {
   navigation: {
     nextEl: '.section-events__nav-btn-next',
     prevEl: '.section-events__nav-btn-prev',
-    disabledClass: "nav-btn--disabled"
+    disabledClass: "nav-btn-disabled"
   },
   breakpoints: {
   611: {

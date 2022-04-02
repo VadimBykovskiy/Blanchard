@@ -73,7 +73,7 @@
 
             <form class="header__search js-search-form" action="/">
               <input class="header__search-input" type="text" placeholder="Поиск по сайту">
-              <button aria-label="Поиск по сайту" class="header__search-btn header__serach-btn--submit link" type="submit">
+              <button aria-label="Поиск по сайту" class="header__search-btn header__search-btn--submit link" type="submit">
                 <svg class="link__text2 link__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
@@ -230,9 +230,9 @@
           </div>
           <div class="section-gallery__swiper">
             <div class="section-gallery__navigation">
-              <button class="nav-btn nav-btn-color section-gallery__prev" aria-label="К предыдущему слайду"></button>
+              <button class="section-gallery__nav-btn nav-btn nav-btn-color section-gallery__prev nav-btn-disabled" aria-label="К предыдущему слайду"></button>
               <div class="section-gallery__pagination"></div>
-              <button class="nav-btn nav-btn-color section-gallery__next" aria-label="К следующему слайду"></button>
+              <button class="section-gallery__nav-btn nav-btn nav-btn-color section-gallery__next nav-btn-disabled" aria-label="К следующему слайду"></button>
             </div>
             <div class="swiper-container slides-container">
             <div class="swiper-wrapper">
@@ -409,7 +409,7 @@
           </div>
           <div class="section-gallery__last">
             <div class="section-gallery__discription">
-              <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href class="discription-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+              <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="discription-link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
             </div>
           </div>
         </div>
@@ -424,7 +424,7 @@
         <p class="section-catalog__discription">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
         <div class="section-catalog__content-bottom flex">
           <article class="section-catalog__card section-catalog__card_active" data-target="twelve">
-          <img src="img/catalogpic1.jpg" alt="Изображение Доменико Гирландайо">
+          <img class="section-catalog__image" src="img/catalogpic1.jpg" alt="Изображение Доменико Гирландайо">
           <h3 class="section-catalog__card-heading"> Доменико Гирландайо</h3>
           <span class="section-catalog__data">2 июня 1448 — 11 января 1494.</span>
           <p class="section-catalog__card-disription">
@@ -432,8 +432,8 @@
         </article>
         <article class="section-catalog__card" data-target="one">
           <img class="section-catalog__pic-none" src="img/nonepicgallery.jpg" alt="Заглушка изображения">
-          <h3 class="section-catalog__card-heading--none">Что мы о нём знаем?</h3>
-          <p class="section-catalog__card-disription--none">
+          <h3 class="section-catalog__card-heading-none">Что мы о нём знаем?</h3>
+          <p class="section-catalog__card-disription-none">
             Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
             <a href="#" class="section-catalog__link-notphoto">В галерею</a>
         </article>
@@ -618,7 +618,7 @@
       <div class="container section-events__container">
         <h2 class="section-title events-title">События</h2>
         <div class="section-events__slider-wrap events-slider">
-          <button class="nav-btn--disabled section-events__nav-btn-prev section-events__slider-nav-btn events-slider__nav-btn nav-btn--big js-events-prev" aria-label="К предыдущему слайду"></button>
+          <button class="nav-btn-disabled section-events__nav-btn-prev section-events__slider-nav-btn events-slider__nav-btn nav-btn-big js-events-prev" aria-label="К предыдущему слайду"></button>
           <div class="section-events__slider-slider js-events-slider">
             <ul class="swiper-wrapper">
               <li class="swiper-slide section-events__slider-slide">
@@ -709,7 +709,7 @@
             </ul>
             <div class="section-events__slider-pagination swiper-pagination section-events__test-pagination"></div>
           </div>
-          <button class="section-events__nav-btn-next section-events__slider-nav-btn nav-btn--big js-events-next" aria-label="К следующему слайду"></button>
+          <button class="section-events__nav-btn-next section-events__slider-nav-btn nav-btn-big js-events-next" aria-label="К следующему слайду"></button>
         </div>
       </div>
     </section>
@@ -724,7 +724,7 @@
           <h3 class="section-projects__heading-content-bottom">Партнеры проектов:</h3>
           <div class="section-projects__slider-container">
             <div class="section-projects__slider-wrap projects-slider">
-              <button class="nav-btn--disabled section-projects__nav-btn section-projects__nav-btn-prev"></button>
+              <button class="nav-btn-disabled section-projects__nav-btn section-projects__nav-btn-prev"></button>
               <div class="section-projects__slider-slider js-projects-slider">
                 <div class="swiper-wrapper">
                   <a href="#" class="swiper-slide section-projects__slide">
@@ -756,7 +756,7 @@
                   </a>
                 </div>
               </div>
-              <button class="nav-btn--disabled section-projects__nav-btn section-projects__nav-btn-next"></button>
+              <button class="nav-btn-disabled section-projects__nav-btn section-projects__nav-btn-next"></button>
             </div>
           </div>
           </div>
@@ -802,7 +802,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
                     <defs>
                     <linearGradient id="paint0_linear_57972_1461" x1="20" y1="0" x2="20" y2="39.7033" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2AABEE"/>
+                    <stop stop-color="#2AABEE" offset="0"/>
                     <stop offset="1" stop-color="#229ED9"/>
                     </linearGradient>
                     </defs>
@@ -864,7 +864,7 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/inputmask.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
