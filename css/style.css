@@ -1591,7 +1591,7 @@ input {
 }
 
 .section-gallery__prev {
-  margin-right: 21px;
+  margin-right: 12px;
 }
 
 .section-gallery__next::before {
@@ -1825,6 +1825,9 @@ input {
   }
   .section-gallery__block-left, .section-gallery__last {
     width: 289px;
+  }
+  .section-gallery__prev {
+    margin-right: 6px;
   }
 }
 
@@ -2094,7 +2097,7 @@ input {
   fill: #ECECEC;
   stroke: #ECECEC;
   transform: translateY(-50%) rotate(-180deg);
-  transition: background-color.3s, .6s ease, transform .3s, .6s ease;
+  transition: background-color .3s, .6s ease, transform .3s, .6s ease;
 }
 
 .head-icon-round {
